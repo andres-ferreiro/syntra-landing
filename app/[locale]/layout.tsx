@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { LOCALES, isLocale } from "@/lib/i18n";
@@ -47,6 +48,13 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(buildOrganizationSchema()) }}
         />
+        {process.env.NODE_ENV === "production" ? (
+          <Script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="fc403e47-9918-48c0-841c-6fee15f37655"
+          />
+        ) : null}
         <Header locale={locale} nav={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} footer={dict.footer} />
