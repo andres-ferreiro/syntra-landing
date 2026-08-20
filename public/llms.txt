@@ -1,0 +1,19 @@
+# Syntra
+
+> Syntra is a business automation and AI agency. It connects lead capture, CRM, messaging, AI chat, appointment booking, and reputation management into one system, so businesses respond faster and stop losing opportunities to slow follow-up.
+
+Syntra builds and manages this connected system for clients — it is not a software product visitors sign up for themselves. Services include: automation workflows, AI assistants trained on a business's own information, CRM and sales pipeline setup, websites and funnels, omnichannel messaging (WhatsApp, Instagram, Facebook, SMS, email, web chat, phone), appointment scheduling automation, and automated reputation/review management.
+
+Pricing is not published; each engagement is scoped to the client's channels, workflows, and complexity after a business audit.
+
+## Pages
+
+- [Homepage (Spanish)](https://getsyntra.io/es): full overview of the service — the connected system, core services, industries served, and how the engagement process works.
+- [Homepage (English)](https://getsyntra.io/en): same content in English.
+- [Contact / Request a Business Audit](https://getsyntra.io/en/contact): lead qualification form and direct contact details (email, phone, WhatsApp).
+- [Book a call](https://getsyntra.io/en/schedule): calendar booking, no form required beyond the essentials.
+
+## Contact
+
+- Email: contacto@getsyntra.io
+- Phone / WhatsApp: +52 657 101 4531

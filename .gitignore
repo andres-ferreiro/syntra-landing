@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local AI-tool configs/caches (not part of the deployed app)
+.claude/
+.codex/
+.cursor/
+.impeccable/
