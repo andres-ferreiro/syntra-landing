@@ -12,7 +12,7 @@ Premium SaaS / modern technology consultancy. Ink-on-paper minimalism, one restr
 
 ## Logo & Brand Color
 
-`public/images/syntra-logo.png` — an "S" mark (connected node-and-line motif, echoing the "connected system" positioning) in a cyan→mint gradient. This is the source of truth for the accent palette below; colors were sampled directly from the asset, then adjusted only as far as needed for AA text/UI contrast. Rendered via `components/ui/Logo.tsx` in the Header (26px) and Footer (24px), paired with the "Syntra" wordmark.
+`public/images/mandhy-logo.png` — the full "mandhy" wordmark (ink-black type, slate-gray dot), rendered via `components/ui/Logo.tsx` in the Header (24px) and Footer (22px); the wordmark already contains the brand name, so no separate text is set alongside it. `public/images/mandhy-icon.png` — the standalone "m." mark, used for favicon/app icons and other square-icon contexts (`app/favicon.ico`, `app/icon.png`, `app/apple-icon.png`, the `Organization` structured-data logo, and the 404 page). The accent palette below predates this asset and was sampled from the prior Syntra logo; it has not been re-derived from the new mark.
 
 ## Tokens (`app/globals.css`, Tailwind v4 `@theme inline`)
 
@@ -53,7 +53,7 @@ Premium SaaS / modern technology consultancy. Ink-on-paper minimalism, one restr
 - `lib/metadata.ts`'s `buildPageMetadata()` is the single source for title/description/canonical/hreflang/OpenGraph/Twitter card metadata — every page must use it (a prior bug had `/contact` and `/schedule` silently inheriting the homepage's OG tags because they only set `title`/`description`/`alternates` and never `openGraph`).
 - Structured data (`lib/structured-data.ts`, escaped via `safeJsonLd()`): site-wide `Organization` schema (name, url, logo, real email/phone) in `app/[locale]/layout.tsx`; `FAQPage` schema generated from `content/dictionaries/{es,en}.ts`'s `faq.items` on the homepage.
 - Per-route dynamic Open Graph images (`next/og` `ImageResponse`) at `app/[locale]/opengraph-image.tsx`, `.../contact/opengraph-image.tsx`, `.../schedule/opengraph-image.tsx`, sharing one template (`lib/og-image.tsx`) that embeds the real logo and each page's own headline.
-- Real favicon/icons generated from `public/images/syntra-logo.png` (`app/favicon.ico`, `app/icon.png`, `app/apple-icon.png`) — previously the untouched default Next.js icon.
+- Real favicon/icons generated from `public/images/mandhy-icon.png` (`app/favicon.ico`, `app/icon.png`, `app/apple-icon.png`).
 - `public/llms.txt`: a plain-language site summary for AI answer engines/crawlers (llms.txt convention), listing pages and contact info, held to the same whitelabel/no-fabrication rules as the rest of the site.
 - `app/robots.ts` disallows `/api/`; `app/sitemap.ts` covers all three routes × both locales.
 - `app/not-found.tsx` is the **true root** 404 (not nested under `[locale]`) — required because the root layout lives at a top-level dynamic segment (`app/[locale]/layout.tsx`), so a nested `not-found.tsx` only catches explicit `notFound()` throws, never a genuinely-unmatched URL (Next.js's own documented caveat for this layout shape). It must not render its own `<html>`/`<body>` — Next generates an implicit root document shell since there's no `app/layout.tsx`, so doing so nests a second document and breaks hydration; the page returns a styled `<div>` instead, with the Geist font variable applied there.

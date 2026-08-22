@@ -6,7 +6,7 @@ import type { HomeDictionary } from "@/content/types";
 
 export function FaqSection({ faq }: { faq: HomeDictionary["faq"] }) {
   return (
-    <section className="border-t border-border bg-surface py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-24 border-t border-border bg-surface py-20 sm:py-28">
       <Container className="max-w-3xl">
         <Reveal>
           <SectionHeader headline={faq.headline} />

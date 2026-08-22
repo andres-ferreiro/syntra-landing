@@ -2,14 +2,14 @@ import type { ContactDictionary } from "@/content/contact-types";
 
 export const es: ContactDictionary = {
   meta: {
-    title: "Solicitar una auditoría de negocio — Syntra",
+    title: "Solicitar una auditoría de negocio: mandhy",
     description:
-      "Cuéntanos sobre tu negocio y te mostraremos dónde la automatización y la IA pueden recuperar oportunidades perdidas.",
+      "Cuéntanos sobre tu negocio y te mostraremos exactamente dónde mandhy puede recuperar oportunidades perdidas.",
   },
   hero: {
     headline: "Solicitar una auditoría de negocio",
     intro:
-      "Cuéntanos un poco sobre cómo funciona tu negocio hoy. Lo revisaremos y te contactaremos con cómo podría verse un sistema conectado para ti — sin costos, sin compromiso.",
+      "Cuéntanos un poco sobre cómo funciona tu negocio hoy. Lo revisaremos y te contactaremos con cómo podría verse mandhy para ti, sin costos, sin compromiso.",
   },
   form: {
     sections: {
@@ -104,20 +104,20 @@ export const es: ContactDictionary = {
     prompt: "¿Prefieres solo agendar una hora en mi calendario?",
     linkLabel: "Agendar una llamada →",
     postSubmitHeadline: "¿Quieres agendar una hora ahora?",
-    postSubmitIntro: "Elige una hora que te funcione — ya tenemos tus datos, no hace falta escribirlos de nuevo.",
-    unavailable: "La agenda no está disponible en este momento — te contactaremos por correo o teléfono.",
+    postSubmitIntro: "Elige una hora que te funcione, ya tenemos tus datos, no hace falta escribirlos de nuevo.",
+    unavailable: "La agenda no está disponible en este momento, te contactaremos por correo o teléfono.",
   },
   directContact: {
     heading: "O contáctanos directamente",
     emailLabel: "Correo",
     phoneLabel: "Llamar",
     whatsappLabel: "WhatsApp",
-    whatsappMessage: "Hola, quiero más información sobre Syntra.",
+    whatsappMessage: "Hola, quiero más información sobre mandhy.",
   },
   schedule: {
     meta: {
-      title: "Agendar una llamada — Syntra",
-      description: "Elige una hora para hablar con Syntra sobre automatizar tu negocio.",
+      title: "Agendar una llamada: mandhy",
+      description: "Elige una hora para hablar con mandhy sobre automatizar tu negocio.",
     },
     headline: "Agendar una llamada",
     intro: "Elige una hora que te funcione. Sin formularios que llenar más allá de lo esencial.",

@@ -2,14 +2,14 @@ import type { ContactDictionary } from "@/content/contact-types";
 
 export const en: ContactDictionary = {
   meta: {
-    title: "Request a Business Audit — Syntra",
+    title: "Request a Business Audit: mandhy",
     description:
-      "Tell us about your business and we'll show you where automation and AI can recover lost opportunities.",
+      "Tell us about your business, and we'll show you exactly where mandhy can recover lost opportunities.",
   },
   hero: {
     headline: "Request a Business Audit",
     intro:
-      "Tell us a bit about how your business runs today. We'll review it and follow up with what a connected system could look like for you — no pricing, no obligation.",
+      "Tell us a bit about how your business runs today. We'll review it and follow up with what mandhy could look like for you, no pricing, no obligation.",
   },
   form: {
     sections: {
@@ -104,20 +104,20 @@ export const en: ContactDictionary = {
     prompt: "Prefer to just grab a time on my calendar?",
     linkLabel: "Book a call →",
     postSubmitHeadline: "Want to lock in a time now?",
-    postSubmitIntro: "Pick a time that works for you — we've already got your details, no need to re-enter them.",
-    unavailable: "Scheduling isn't available right now — we'll reach out by email or phone instead.",
+    postSubmitIntro: "Pick a time that works for you, we've already got your details, no need to re-enter them.",
+    unavailable: "Scheduling isn't available right now, we'll reach out by email or phone instead.",
   },
   directContact: {
     heading: "Or reach us directly",
     emailLabel: "Email",
     phoneLabel: "Call",
     whatsappLabel: "WhatsApp",
-    whatsappMessage: "Hi, I'd like more information about Syntra.",
+    whatsappMessage: "Hi, I'd like more information about mandhy.",
   },
   schedule: {
     meta: {
-      title: "Book a Call — Syntra",
-      description: "Pick a time to talk with Syntra about automating your business.",
+      title: "Book a Call: mandhy",
+      description: "Pick a time to talk with mandhy about automating your business.",
     },
     headline: "Book a call",
     intro: "Pick a time that works for you. No forms to fill out here beyond the essentials.",

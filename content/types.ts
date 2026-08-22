@@ -29,55 +29,26 @@ export interface HomeDictionary {
     primaryCta: Cta;
     secondaryCta: Cta;
   };
-  problem: {
+  advantages: {
     headline: string;
-    points: string[];
-  };
-  systemFlow: {
-    headline: string;
-    steps: string[];
+    subhead: string;
+    reach: { title: string; caption: string };
+    speed: { title: string; caption: string };
+    alwaysOn: { title: string; caption: string };
   };
   coreServices: {
     headline: string;
-    services: { title: string; description: string }[];
-  };
-  automationExamples: {
-    headline: string;
-    examples: { trigger: string; action: string }[];
+    funnel: { title: string; description: string };
+    scheduling: { title: string; description: string };
+    integrations: { title: string; description: string };
+    crm: { title: string; description: string };
   };
   ai: {
-    headline: string;
-    intro: string;
-    capabilities: string[];
-    ruleNote: string;
     conversation: ChatMessage[];
-  };
-  crm: {
-    headline: string;
-    description: string;
-    stages: string[];
-  };
-  omnichannel: {
-    headline: string;
-    description: string;
-    channels: string[];
-  };
-  reputation: {
-    headline: string;
-    description: string;
-    points: string[];
-  };
-  industries: {
-    headline: string;
-    items: string[];
   };
   howItWorks: {
     headline: string;
     steps: { title: string; description: string }[];
-  };
-  benefits: {
-    headline: string;
-    items: string[];
   };
   faq: {
     headline: string;

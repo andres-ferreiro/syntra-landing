@@ -13,7 +13,7 @@ export function LanguageSwitcher({ locale, label }: { locale: Locale; label: str
   return (
     <Link
       href={href}
-      className="rounded-pill border border-border px-3.5 py-1.5 text-sm font-medium text-ink transition-colors duration-200 hover:border-ink"
+      className="rounded-pill border border-border/40 bg-paper/30 px-3.5 py-1.5 text-sm font-medium text-ink backdrop-blur-md transition-colors duration-200 hover:border-ink hover:bg-paper/55"
       aria-label={`Switch language to ${target}`}
     >
       {label}

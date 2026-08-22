@@ -2,113 +2,62 @@ import type { HomeDictionary } from "@/content/types";
 
 export const en: HomeDictionary = {
   meta: {
-    title: "Syntra — Business Automation & AI",
+    title: "mandhy: Your Business's AI Assistant",
     description:
-      "Syntra connects your lead capture, communication, CRM, AI, and automation into one system built to turn more opportunities into customers.",
+      "mandhy is the AI assistant that answers your customers, books their calls, follows up on every lead, and keeps your reputation growing.",
   },
   nav: {
     links: [
       { label: "Solutions", href: "#services" },
-      { label: "AI Automation", href: "#ai" },
-      { label: "Industries", href: "#industries" },
       { label: "How it works", href: "#how-it-works" },
+      { label: "FAQ", href: "#faq" },
     ],
     cta: { label: "Request an audit", href: "/contact" },
     languageSwitcherLabel: "ES",
   },
   hero: {
-    headline: "Turn more opportunities into customers with automation and AI.",
+    headline: "mandhy is your business's AI assistant.",
     subcopy:
-      "Syntra connects your website, CRM, messaging, follow-up, appointments, and reputation into one system built around how your business actually works.",
+      "It answers your customers, books their calls, and follows up on every lead, so nothing slips through.",
     primaryCta: { label: "Request a Business Audit", href: "/contact" },
     secondaryCta: { label: "Explore Solutions", href: "#services" },
   },
-  problem: {
-    headline: "Your business may already be generating opportunities — and losing them at the same time.",
-    points: [
-      "Leads arrive from multiple channels and messages get lost.",
-      "Response time is slow and nobody follows up.",
-      "Missed calls are never recovered.",
-      "Leads are managed by hand, in spreadsheets or inboxes.",
-      "Appointment coordination is manual, and there are too many no-shows.",
-      "Old leads are ignored, and satisfied customers are never asked for a review.",
-    ],
-  },
-  systemFlow: {
-    headline: "One connected system for your entire customer journey.",
-    steps: [
-      "Traffic",
-      "Lead Capture",
-      "CRM",
-      "AI + Automation",
-      "Follow-Up",
-      "Appointment / Sale",
-      "Review",
-      "Reactivation",
-    ],
+  advantages: {
+    headline: "Built to work everywhere your business does.",
+    subhead: "Every industry, every hour, without missing a beat.",
+    reach: {
+      title: "Every industry, every business.",
+      caption: "Clinics, real estate, restaurants, salons, and more, whatever your business.",
+    },
+    speed: {
+      title: "Faster than any human on your team.",
+      caption: "While someone's still typing a reply, mandhy already answered.",
+    },
+    alwaysOn: {
+      title: "Working 24/7, so you don't have to.",
+      caption: "Nights, weekends, holidays: mandhy never clocks out.",
+    },
   },
   coreServices: {
-    headline: "Everything it takes to move an opportunity forward, in one place.",
-    services: [
-      {
-        title: "Automation",
-        description: "Workflows that respond, follow up, and alert your team without anyone having to remember to.",
-      },
-      {
-        title: "AI",
-        description: "Assistants trained on your real business information to answer and qualify leads.",
-      },
-      {
-        title: "CRM",
-        description: "A clear pipeline of contacts and opportunities, no more scattered spreadsheets.",
-      },
-      {
-        title: "Websites & Funnels",
-        description: "Pages that don't just look good — they move opportunities forward.",
-      },
-      {
-        title: "Omnichannel Communication",
-        description: "WhatsApp, social, SMS, email, and calls, centralized into one conversation.",
-      },
-      {
-        title: "Appointments",
-        description: "Online booking with confirmations, reminders, and no-show recovery.",
-      },
-      {
-        title: "Reputation",
-        description: "Automated review requests that turn satisfied customers into trust.",
-      },
-      {
-        title: "Reporting & Integrations",
-        description: "Clear visibility into leads, appointments, and sales, so you know what's working.",
-      },
-    ],
-  },
-  automationExamples: {
-    headline: "Every moment of the process, covered automatically.",
-    examples: [
-      { trigger: "New Lead", action: "Instant Response" },
-      { trigger: "Missed Call", action: "Automatic Message" },
-      { trigger: "No Response", action: "Scheduled Follow-Up" },
-      { trigger: "Appointment Booked", action: "Automatic Reminder" },
-      { trigger: "No-Show", action: "Rebooking" },
-      { trigger: "Service Completed", action: "Review Request" },
-      { trigger: "Old Lead", action: "Reactivation" },
-    ],
+    headline: "Everything it takes to win a customer, handled by mandhy.",
+    funnel: {
+      title: "Funnels",
+      description: "Websites and funnels built to move leads toward a decision.",
+    },
+    scheduling: {
+      title: "Smart Scheduling",
+      description: "mandhy books, confirms, and sends reminders around the clock.",
+    },
+    integrations: {
+      title: "Integrations",
+      description: "Every channel and tool connected into one clear system.",
+    },
+    crm: {
+      title: "CRM",
+      description: "Every contact and opportunity organized in one clear pipeline.",
+    },
   },
   ai: {
-    headline: "AI trained to work inside your business processes.",
-    intro:
-      "Syntra's assistants answer FAQs, collect information, qualify leads, recommend next steps, and book appointments — updating your CRM and triggering workflows automatically.",
-    capabilities: [
-      "Answers FAQs",
-      "Collects lead information",
-      "Qualifies opportunities",
-      "Books appointments",
-      "Updates the CRM",
-      "Escalates to a human when needed",
-    ],
-    ruleNote: "AI for speed. Humans for important decisions.",
     conversation: [
       { from: "user", text: "Hi, do you have availability this week?" },
       {
@@ -119,127 +68,69 @@ export const en: HomeDictionary = {
       { from: "ai", text: "You're booked for Thursday at 10am. I'll send you a reminder beforehand." },
     ],
   },
-  crm: {
-    headline: "Stop managing opportunities from inboxes and spreadsheets.",
-    description:
-      "Syntra organizes every contact and opportunity into a clear pipeline, with conversation history, notes, and assigned owners.",
-    stages: [
-      "New Lead",
-      "Contacted",
-      "Qualified",
-      "Appointment Booked",
-      "Follow-Up",
-      "Won",
-    ],
-  },
-  omnichannel: {
-    headline: "Your customers message you everywhere. Your business should see everything in one place.",
-    description:
-      "Centralize every conversation, no matter which channel it comes from, to respond faster and keep your team coordinated.",
-    channels: ["WhatsApp", "Instagram", "Facebook", "SMS", "Email", "Web Chat", "Phone"],
-  },
-  reputation: {
-    headline: "Turn happy customers into stronger online trust.",
-    description:
-      "Automate review requests and follow-up reminders, so every satisfied customer helps win the next one.",
-    points: [
-      "Automated review requests",
-      "Follow-up reminders",
-      "Direct review links",
-      "Testimonial collection",
-    ],
-  },
-  industries: {
-    headline: "Every system is adapted to your business's real workflow.",
-    items: [
-      "Local Services",
-      "Clinics & Aesthetics",
-      "Real Estate",
-      "Event Venues",
-      "Restaurants",
-      "Professional Services",
-      "Ecommerce",
-      "Agencies",
-    ],
-  },
   howItWorks: {
     headline: "A clear process, start to finish.",
     steps: [
-      { title: "Analyze", description: "We understand how your business runs today and where opportunities are lost." },
-      { title: "Design", description: "We define the system and workflows around your real process." },
-      { title: "Build", description: "We implement the automation, AI, and integrations." },
-      { title: "Test", description: "We validate every workflow before it goes live." },
-      { title: "Launch", description: "Your system goes into operation with your team." },
-      { title: "Optimize", description: "We refine it based on real results." },
-    ],
-  },
-  benefits: {
-    headline: "What changes when your business has a connected system.",
-    items: [
-      "Faster response to every lead",
-      "Fewer missed opportunities",
-      "Less repetitive manual work",
-      "Consistent follow-up",
-      "Centralized conversations",
-      "An organized pipeline",
-      "Simpler appointment management",
-      "More review opportunities",
-      "Better visibility into the business",
+      { title: "Analyze", description: "We learn how your business runs today, and where opportunities slip through." },
+      { title: "Design", description: "We shape mandhy around your real process, not the other way around." },
+      { title: "Build", description: "We set up mandhy's automation, AI, and integrations." },
+      { title: "Test", description: "We check every response and workflow before mandhy goes live." },
+      { title: "Launch", description: "mandhy goes to work alongside your team." },
+      { title: "Optimize", description: "We refine mandhy based on real results." },
     ],
   },
   faq: {
     headline: "Frequently Asked Questions",
     items: [
       {
-        question: "Does Syntra replace my team?",
+        question: "Does mandhy replace my team?",
         answer:
-          "No. Syntra automates repetitive work and uses AI for speed, but important decisions — negotiation, complaints, sensitive cases — always go through a person.",
+          "No. mandhy handles the repetitive work and responds at AI speed, but the decisions that matter (negotiation, complaints, sensitive cases) always go to a person.",
       },
       {
         question: "Can AI answer my customers?",
         answer:
-          "Yes, trained on your real business information: it answers FAQs, qualifies leads, and books appointments, escalating to a person when needed.",
+          "Yes. Trained on your real business information, mandhy answers FAQs, qualifies leads, and books appointments, escalating to a person whenever it should.",
       },
       {
-        question: "Can Syntra connect WhatsApp?",
-        answer: "Yes, along with Instagram, Facebook, SMS, email, web chat, and phone — all centralized.",
+        question: "Can mandhy connect WhatsApp?",
+        answer: "Yes, along with Instagram, Facebook, SMS, email, web chat, and phone: mandhy brings them all into one place.",
       },
       {
         question: "Do I need to replace all my current tools?",
-        answer: "Not necessarily. We design the system around your current operation wherever possible.",
+        answer: "Not necessarily. mandhy is built around your current operation wherever possible.",
       },
       {
-        question: "Can Syntra build my website?",
-        answer: "Yes. We build websites and funnels that are an active part of your sales process, connected to your CRM and automation.",
+        question: "Can mandhy build my website?",
+        answer: "Yes. We build websites and funnels that are an active part of your sales process, working alongside mandhy's CRM and automation.",
       },
       {
-        question: "Can Syntra help with Google reviews?",
-        answer: "Yes, with automated review-request workflows. We don't guarantee specific search rankings.",
+        question: "Can mandhy help with Google reviews?",
+        answer: "Yes, mandhy automates review requests at the right moment. We don't guarantee specific search rankings.",
       },
       {
         question: "Does this work for my industry?",
-        answer: "We work with local services, clinics, real estate, restaurants, professional services, ecommerce, and agencies, adapting each system to the real workflow of the business.",
+        answer: "mandhy works with local services, clinics, real estate, restaurants, professional services, ecommerce, and agencies, adapted to how each business actually runs.",
       },
       {
         question: "How much does it cost?",
         answer:
-          "Each system is scoped based on channels, workflows, AI, integrations, complexity, and business needs. Contact us for an assessment.",
+          "Every engagement is scoped around your channels, workflows, AI needs, integrations, and complexity. Contact us for an assessment.",
       },
     ],
   },
   finalCta: {
-    headline: "Your business does not need more manual work. It needs better systems.",
+    headline: "Your business doesn't need more manual work. It needs mandhy.",
     cta: { label: "Request a Business Audit", href: "/contact" },
   },
   footer: {
-    tagline: "Automation and AI for businesses that want to grow.",
+    tagline: "The AI assistant behind businesses that want to grow.",
     links: [
       { label: "Solutions", href: "#services" },
-      { label: "AI Automation", href: "#ai" },
-      { label: "Industries", href: "#industries" },
       { label: "How it works", href: "#how-it-works" },
+      { label: "FAQ", href: "#faq" },
     ],
-    contactCta: { label: "Talk to Syntra", href: "/contact" },
+    contactCta: { label: "Talk to mandhy", href: "/contact" },
     rights: "All rights reserved.",
   },
 };

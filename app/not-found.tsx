@@ -19,12 +19,12 @@ export default function NotFound() {
       className={`${geistSans.variable} flex min-h-screen flex-col items-center justify-center bg-paper px-6 py-20 text-center font-sans antialiased`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- standalone document, no next/image context needed for a 40px decorative mark */}
-      <img src="/images/syntra-logo.png" alt="" width={40} height={40} />
+      <img src="/images/mandhy-icon.png" alt="" width={40} height={40} />
       <h1 className="mt-6 text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         404
       </h1>
       <p className="mt-3 text-lg text-ink-soft">
-        Página no encontrada — Page not found.
+        Página no encontrada. Page not found.
       </p>
       <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
         <Link

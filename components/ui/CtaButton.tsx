@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "inverted";
+type Variant = "primary" | "secondary" | "inverted" | "glass";
 type Size = "md" | "lg";
 
 const base =
@@ -14,6 +14,10 @@ const variants: Record<Variant, string> = {
     "border border-border text-ink hover:border-ink hover:-translate-y-0.5",
   inverted:
     "bg-paper text-ink hover:bg-accent-soft shadow-card hover:-translate-y-0.5",
+  // Minimal frosted-glass treatment for surfaces that are already blurred
+  // (the header bar) — blends in rather than sitting on top as a solid block.
+  glass:
+    "border border-border/40 bg-paper/30 text-ink backdrop-blur-md hover:bg-paper/55 hover:border-border",
 };
 
 const sizes: Record<Size, string> = {

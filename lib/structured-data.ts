@@ -12,7 +12,7 @@ export function buildOrganizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/images/syntra-logo.png`,
+    logo: `${SITE_URL}/images/mandhy-icon.png`,
     email: CONTACT_EMAIL,
     telephone: CONTACT_PHONE,
     contactPoint: [

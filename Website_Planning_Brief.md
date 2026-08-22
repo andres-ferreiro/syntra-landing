@@ -1,19 +1,19 @@
-# SYNTRA — Claude Code Website Planning Brief
+# MANDHY — Claude Code Website Planning Brief
 
 ## 1. Project Overview
 
-**Brand:** Syntra  
+**Brand:** mandhy  
 **Business:** AI automation and business systems agency  
 **Primary platform:** HighLevel (used internally as the operational backbone)  
-**Website goal:** Explain clearly how Syntra helps businesses capture leads, respond faster, automate follow-up, organize sales, book appointments, improve reputation, reactivate old leads, and operate more efficiently.
+**Website goal:** Explain clearly how mandhy helps businesses capture leads, respond faster, automate follow-up, organize sales, book appointments, improve reputation, reactivate old leads, and operate more efficiently.
 
 ### Important Positioning Rule
 
-Syntra is **not** a HighLevel reseller website.
+mandhy is **not** a HighLevel reseller website.
 
 The public website should sell the **business outcome**, not the software.
 
-Syntra should be positioned as:
+mandhy should be positioned as:
 
 > **A business automation and AI agency that builds connected growth systems for lead capture, sales, customer communication, follow-up, appointments, reputation, and operations.**
 
@@ -21,13 +21,13 @@ Syntra should be positioned as:
 
 # 2. Main Business Promise
 
-Syntra helps businesses reduce lost opportunities by connecting their main customer acquisition and sales processes into one system.
+mandhy helps businesses reduce lost opportunities by connecting their main customer acquisition and sales processes into one system.
 
 Core message:
 
 > **Capture more opportunities. Respond faster. Follow up automatically. Keep every lead organized.**
 
-Syntra connects:
+mandhy connects:
 
 - websites;
 - landing pages;
@@ -53,7 +53,7 @@ Syntra connects:
 
 ---
 
-# 3. Core Problems Syntra Solves
+# 3. Core Problems mandhy Solves
 
 The website should clearly communicate that many businesses lose revenue because of poor systems, not lack of demand.
 
@@ -78,7 +78,7 @@ Common problems:
 
 The website should communicate:
 
-> **Syntra connects the process from first contact to sale, review, and reactivation.**
+> **mandhy connects the process from first contact to sale, review, and reactivation.**
 
 ---
 
@@ -107,7 +107,7 @@ Use workflows to automate repetitive actions such as:
 
 ## 4.2 AI Automation
 
-Syntra can build AI assistants trained on the real business information.
+mandhy can build AI assistants trained on the real business information.
 
 Capabilities may include:
 
@@ -144,7 +144,7 @@ Human escalation should be used for:
 
 ## 4.3 CRM & Sales Pipeline
 
-Syntra builds customized CRM systems to organize leads and sales opportunities.
+mandhy builds customized CRM systems to organize leads and sales opportunities.
 
 Possible pipeline stages:
 
@@ -178,9 +178,9 @@ CRM capabilities to explain:
 
 ## 4.4 Websites & Funnels
 
-Syntra builds websites that function as part of the sales process.
+mandhy builds websites that function as part of the sales process.
 
-A Syntra website should be able to connect:
+A mandhy website should be able to connect:
 
 - forms;
 - chat;
@@ -247,7 +247,7 @@ Capabilities:
 
 ## 4.7 Reputation & Google Reviews
 
-Syntra can build automated reputation workflows.
+mandhy can build automated reputation workflows.
 
 Capabilities:
 
@@ -268,7 +268,7 @@ Do not guarantee Google rankings.
 
 ## 4.8 Reporting & Integrations
 
-Syntra can help businesses track:
+mandhy can help businesses track:
 
 - leads;
 - source;
@@ -385,7 +385,7 @@ Primary CTA:
 
 ### Supporting copy
 
-**Syntra connects your website, CRM, messaging, follow-up, appointments, and reputation into one system built around how your business actually works.**
+**mandhy connects your website, CRM, messaging, follow-up, appointments, and reputation into one system built around how your business actually works.**
 
 Primary CTA:
 
@@ -415,7 +415,7 @@ Explain:
 
 ---
 
-## 7.4 Syntra System Section
+## 7.4 mandhy System Section
 
 Headline:
 
@@ -583,18 +583,18 @@ Do not use fake percentages.
 
 Include:
 
-- Does Syntra replace my team?
+- Does mandhy replace my team?
 - Can AI answer my customers?
-- Can Syntra connect WhatsApp?
+- Can mandhy connect WhatsApp?
 - Do I need to replace all my current tools?
-- Can Syntra build my website?
-- Can Syntra help with Google reviews?
+- Can mandhy build my website?
+- Can mandhy help with Google reviews?
 - Does this work for my industry?
 - How much does it cost?
 
 For pricing:
 
-> **Each system is scoped based on channels, workflows, AI, integrations, complexity, and business needs. Contact Syntra for an assessment.**
+> **Each system is scoped based on channels, workflows, AI, integrations, complexity, and business needs. Contact mandhy for an assessment.**
 
 Do not display public pricing.
 
@@ -638,7 +638,7 @@ After submission, the future system should be ready to:
 1. create/update the contact;
 2. create an opportunity;
 3. assign a pipeline stage;
-4. notify Syntra;
+4. notify mandhy;
 5. offer appointment booking;
 6. trigger follow-up if the prospect does not book.
 
@@ -715,7 +715,7 @@ Recommended characteristics:
 - invent client metrics;
 - invent testimonials;
 - invent integrations;
-- make Syntra sound like a chatbot-only company.
+- make mandhy sound like a chatbot-only company.
 
 ---
 
@@ -743,7 +743,7 @@ Use one primary CTA consistently:
 Possible secondary CTAs:
 
 - Explore Solutions
-- Talk to Syntra
+- Talk to mandhy
 - See What You Can Automate
 - Book a Call
 
@@ -992,16 +992,16 @@ Then implementation can begin.
 
 The most important concept is:
 
-> **Syntra builds connected growth systems for businesses.**
+> **mandhy builds connected growth systems for businesses.**
 
-Syntra is not only:
+mandhy is not only:
 
 - a website company;
 - a chatbot company;
 - a CRM company;
 - an automation company.
 
-Syntra connects:
+mandhy connects:
 
 > **Lead Capture + Communication + CRM + AI + Automation + Appointments + Sales + Reputation + Reactivation + Reporting**
 
@@ -1016,9 +1016,9 @@ Use this prompt together with this file:
 ```text
 You are a senior product designer, UX strategist, B2B SaaS copywriter, frontend architect, and conversion-focused web developer.
 
-You are planning the official website for Syntra.
+You are planning the official website for mandhy.
 
-Read the attached SYNTRA website planning brief carefully and treat it as the source of truth.
+Read the attached MANDHY website planning brief carefully and treat it as the source of truth.
 
 Do NOT start by coding the entire website.
 
@@ -1046,7 +1046,7 @@ Critical rules:
 
 - No public pricing.
 - Do not position HighLevel as the product.
-- Syntra is the brand.
+- mandhy is the brand.
 - Do not invent testimonials, client logos, metrics, certifications, integrations, or results.
 - Do not use generic AI agency clichés.
 - Focus on business outcomes before technology.

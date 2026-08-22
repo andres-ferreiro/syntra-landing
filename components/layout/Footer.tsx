@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
-import type { Locale } from "@/lib/i18n";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import type { HomeDictionary } from "@/content/types";
 
 export function Footer({
@@ -15,12 +15,8 @@ export function Footer({
     <footer className="border-t border-border">
       <Container className="flex flex-col gap-8 py-14 sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-sm">
-          <Link
-            href={`/${locale}`}
-            className="flex items-center gap-2.5 text-lg font-semibold tracking-tight text-ink"
-          >
-            <Logo size={24} />
-            Syntra
+          <Link href={`/${locale}`} className="flex items-center">
+            <Logo height={22} />
           </Link>
           <p className="mt-3 text-sm leading-relaxed text-ink-soft">{footer.tagline}</p>
         </div>
@@ -36,7 +32,7 @@ export function Footer({
             </a>
           ))}
           <Link
-            href={footer.contactCta.href}
+            href={localizeHref(locale, footer.contactCta.href)}
             className="text-sm font-medium text-ink-soft transition-colors duration-200 hover:text-ink"
           >
             {footer.contactCta.label}
@@ -44,7 +40,7 @@ export function Footer({
         </nav>
       </Container>
       <Container className="flex flex-col gap-2 border-t border-border py-6 text-xs text-ink-soft sm:flex-row sm:items-center sm:justify-between">
-        <span>© {new Date().getFullYear()} Syntra. {footer.rights}</span>
+        <span>© {new Date().getFullYear()} mandhy. {footer.rights}</span>
       </Container>
     </footer>
   );

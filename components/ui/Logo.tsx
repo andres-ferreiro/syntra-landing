@@ -1,12 +1,14 @@
 import Image from "next/image";
 
-export function Logo({ size = 28 }: { size?: number }) {
+const LOGO_ASPECT_RATIO = 836 / 216;
+
+export function Logo({ height = 28 }: { height?: number }) {
   return (
     <Image
-      src="/images/syntra-logo.png"
-      alt="Syntra"
-      width={size}
-      height={size}
+      src="/images/mandhy-logo.png"
+      alt="mandhy"
+      width={Math.round(height * LOGO_ASPECT_RATIO)}
+      height={height}
       className="flex-shrink-0"
       priority
     />

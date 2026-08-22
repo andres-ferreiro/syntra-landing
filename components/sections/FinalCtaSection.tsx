@@ -1,9 +1,16 @@
 import { Container } from "@/components/ui/Container";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { Reveal } from "@/components/ui/Reveal";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import type { HomeDictionary } from "@/content/types";
 
-export function FinalCtaSection({ finalCta }: { finalCta: HomeDictionary["finalCta"] }) {
+export function FinalCtaSection({
+  finalCta,
+  locale,
+}: {
+  finalCta: HomeDictionary["finalCta"];
+  locale: Locale;
+}) {
   return (
     <section className="py-20 sm:py-28">
       <Container>
@@ -21,7 +28,7 @@ export function FinalCtaSection({ finalCta }: { finalCta: HomeDictionary["finalC
           </h2>
           <CtaButton
             label={finalCta.cta.label}
-            href={finalCta.cta.href}
+            href={localizeHref(locale, finalCta.cta.href)}
             variant="inverted"
             size="lg"
           />
