@@ -31,10 +31,15 @@ export const es: ContactDictionary = {
       needs: "Qué necesitas",
     },
     fields: {
-      name: { label: "Nombre", placeholder: "Nombre completo" },
+      firstName: { label: "Nombre", placeholder: "Tu nombre" },
+      lastName: { label: "Apellido", placeholder: "Tu apellido" },
       businessName: { label: "Nombre del negocio", placeholder: "Tu negocio" },
       email: { label: "Correo", placeholder: "tu@negocio.com" },
-      phone: { label: "Teléfono", placeholder: "(555) 555-5555" },
+      phone: {
+        label: "Teléfono",
+        placeholder: "656 123 4567",
+        invalidMessage: "Revisa el número, no parece completo.",
+      },
       website: { label: "Sitio web", placeholder: "https://" },
       industry: {
         label: "Industria",
@@ -118,8 +123,9 @@ export const es: ContactDictionary = {
   booking: {
     prompt: "¿Prefieres solo agendar una hora en mi calendario?",
     linkLabel: "Agendar una llamada",
+    optionalLabel: "Opcional",
     postSubmitHeadline: "¿Quieres agendar una hora ahora?",
-    postSubmitIntro: "Elige una hora que te funcione, ya tenemos tus datos, no hace falta escribirlos de nuevo.",
+    postSubmitIntro: "Es completamente opcional. Si prefieres, elige una hora que te funcione, ya tenemos tus datos, no hace falta escribirlos de nuevo.",
     unavailable: "La agenda no está disponible en este momento, te contactaremos por correo o teléfono.",
   },
   directContact: {

@@ -54,10 +54,10 @@ body {
 }
 
 /* Form controls that already show focus via their own border-color change
-   (see ContactForm's inputClass) — the sitewide ring above would otherwise
-   stack on top of it as a distracting double border. Written outside any
-   Tailwind @layer, same as the rule above, so it wins on the same footing
-   rather than losing to it via cascade-layer ordering. */
+   (see ContactSection's inputClass/fieldBaseClass) — the sitewide ring
+   above would otherwise stack on top of it as a distracting double border.
+   Written outside any Tailwind @layer, same as the rule above, so it wins
+   on the same footing rather than losing to it via cascade-layer ordering. */
 .field-control:focus-visible {
   outline: none;
 }

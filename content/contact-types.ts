@@ -12,6 +12,10 @@ export interface SelectFieldCopy extends FieldCopy {
   options: SelectOption[];
 }
 
+export interface PhoneFieldCopy extends FieldCopy {
+  invalidMessage: string;
+}
+
 export interface ContactDictionary {
   meta: {
     title: string;
@@ -33,10 +37,11 @@ export interface ContactDictionary {
       needs: string;
     };
     fields: {
-      name: FieldCopy;
+      firstName: FieldCopy;
+      lastName: FieldCopy;
       businessName: FieldCopy;
       email: FieldCopy;
-      phone: FieldCopy;
+      phone: PhoneFieldCopy;
       website: FieldCopy;
       industry: SelectFieldCopy;
       leadVolume: SelectFieldCopy;
@@ -61,6 +66,7 @@ export interface ContactDictionary {
   booking: {
     prompt: string;
     linkLabel: string;
+    optionalLabel: string;
     postSubmitHeadline: string;
     postSubmitIntro: string;
     unavailable: string;

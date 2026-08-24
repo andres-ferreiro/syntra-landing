@@ -31,10 +31,15 @@ export const en: ContactDictionary = {
       needs: "What you need",
     },
     fields: {
-      name: { label: "Name", placeholder: "Full name" },
+      firstName: { label: "First name", placeholder: "Your first name" },
+      lastName: { label: "Last name", placeholder: "Your last name" },
       businessName: { label: "Business name", placeholder: "Your business" },
       email: { label: "Email", placeholder: "you@business.com" },
-      phone: { label: "Phone", placeholder: "(555) 555-5555" },
+      phone: {
+        label: "Phone",
+        placeholder: "555 123 4567",
+        invalidMessage: "Double-check the number, it doesn't look complete.",
+      },
       website: { label: "Website", placeholder: "https://" },
       industry: {
         label: "Industry",
@@ -118,8 +123,9 @@ export const en: ContactDictionary = {
   booking: {
     prompt: "Prefer to just grab a time on my calendar?",
     linkLabel: "Book a call",
+    optionalLabel: "Optional",
     postSubmitHeadline: "Want to lock in a time now?",
-    postSubmitIntro: "Pick a time that works for you, we've already got your details, no need to re-enter them.",
+    postSubmitIntro: "Totally optional. If you'd like, pick a time that works for you, we've already got your details, no need to re-enter them.",
     unavailable: "Scheduling isn't available right now, we'll reach out by email or phone instead.",
   },
   directContact: {

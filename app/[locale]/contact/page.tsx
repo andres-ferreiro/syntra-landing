@@ -4,12 +4,9 @@ import { isLocale } from "@/lib/i18n";
 import { getContactDictionary } from "@/content/get-contact-dictionary";
 import { buildPageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
-import { CtaButton } from "@/components/ui/CtaButton";
-import { ContactForm } from "@/components/patterns/ContactForm";
+import { ContactSection } from "@/components/patterns/ContactSection";
 import { ContactFlowPreview } from "@/components/patterns/ContactFlowPreview";
-import { DirectContactLinks } from "@/components/patterns/DirectContactLinks";
 import { DotField } from "@/components/patterns/DotField";
-import { localizeHref } from "@/lib/i18n";
 
 export async function generateMetadata({
   params,
@@ -48,35 +45,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
 
       <div className="lg:flex lg:w-[58%] lg:min-h-[calc(100vh-5rem)] lg:items-center">
         <Container className="max-w-xl py-10 sm:py-12">
-          <h1 className="text-balance text-3xl font-medium tracking-tight text-ink sm:text-4xl">
-            {dict.hero.headline}
-          </h1>
-          <p className="mt-3 max-w-[58ch] text-base leading-relaxed text-ink-soft">
-            {dict.hero.intro}
-          </p>
-
-          <div className="mt-5 flex flex-wrap items-center gap-4">
-            <CtaButton
-              label={dict.booking.linkLabel}
-              href={localizeHref(locale, "/schedule")}
-              variant="secondary"
-            />
-            <span className="text-sm text-ink-soft">{dict.booking.prompt}</span>
-          </div>
-
-          <div className="mt-8">
-            <ContactForm dict={dict} locale={locale} />
-          </div>
-
-          <div className="mt-8">
-            <DirectContactLinks
-              heading={dict.directContact.heading}
-              emailLabel={dict.directContact.emailLabel}
-              phoneLabel={dict.directContact.phoneLabel}
-              whatsappLabel={dict.directContact.whatsappLabel}
-              whatsappMessage={dict.directContact.whatsappMessage}
-            />
-          </div>
+          <ContactSection dict={dict} locale={locale} />
         </Container>
       </div>
     </section>

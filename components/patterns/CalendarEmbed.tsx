@@ -8,31 +8,34 @@ import { useState } from "react";
 // this kind of hosted booking widget but should be verified once a real
 // embed URL is wired in.
 export interface CalendarPrefill {
-  name?: string;
+  firstName?: string;
+  lastName?: string;
   email?: string;
   phone?: string;
 }
 
 function buildSrc(baseUrl: string, prefill?: CalendarPrefill) {
   const url = new URL(baseUrl);
-  if (prefill?.name) {
-    const trimmed = prefill.name.trim();
-    const [firstName, ...rest] = trimmed.split(/\s+/);
-    const lastName = rest.join(" ");
-    // Widget param naming isn't documented, so cover the common
-    // conventions (camelCase, snake_case, and short forms) — unrecognized
-    // params are ignored, so this is safe to send redundantly.
-    if (firstName) {
-      url.searchParams.set("firstName", firstName);
-      url.searchParams.set("first_name", firstName);
-      url.searchParams.set("fname", firstName);
-    }
-    if (lastName) {
-      url.searchParams.set("lastName", lastName);
-      url.searchParams.set("last_name", lastName);
-      url.searchParams.set("lname", lastName);
-    }
-    url.searchParams.set("name", trimmed);
+  const firstName = prefill?.firstName?.trim();
+  const lastName = prefill?.lastName?.trim();
+  // Collected as two separate fields precisely so both land here reliably
+  // — splitting a single "full name" field on whitespace left the widget's
+  // required last-name field empty whenever someone typed just one word.
+  // Widget param naming isn't documented, so cover the common conventions
+  // (camelCase, snake_case, and short forms) — unrecognized params are
+  // ignored, so this is safe to send redundantly.
+  if (firstName) {
+    url.searchParams.set("firstName", firstName);
+    url.searchParams.set("first_name", firstName);
+    url.searchParams.set("fname", firstName);
+  }
+  if (lastName) {
+    url.searchParams.set("lastName", lastName);
+    url.searchParams.set("last_name", lastName);
+    url.searchParams.set("lname", lastName);
+  }
+  if (firstName || lastName) {
+    url.searchParams.set("name", [firstName, lastName].filter(Boolean).join(" "));
   }
   if (prefill?.email) url.searchParams.set("email", prefill.email);
   if (prefill?.phone) url.searchParams.set("phone", prefill.phone);
