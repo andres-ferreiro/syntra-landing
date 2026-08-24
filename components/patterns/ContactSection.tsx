@@ -21,8 +21,11 @@ type Status = "idle" | "submitting" | "success" | "error";
 // utility to override it is unreliable (which one wins depends on Tailwind's
 // generated rule order, not the order the classes appear in the string —
 // that's what made the dial-code select swallow the whole row earlier).
+// `text-base sm:text-sm` (16px → 14px) isn't a visual choice — iOS Safari
+// zooms the whole page in on focus for any input under 16px, which on a
+// multi-step form means every "Continuar" tap re-triggers an unwanted zoom.
 const fieldBaseClass =
-  "field-control rounded-xl border border-border bg-surface px-3.5 py-2.5 text-sm text-ink outline-none transition-colors duration-200 placeholder:text-ink-soft/60 focus-visible:border-accent-strong";
+  "field-control rounded-xl border border-border bg-surface px-3.5 py-2.5 text-base sm:text-sm text-ink outline-none transition-colors duration-200 placeholder:text-ink-soft/60 focus-visible:border-accent-strong";
 const inputClass = `${fieldBaseClass} w-full`;
 
 const labelClass = "mb-1 block text-xs font-medium text-ink";

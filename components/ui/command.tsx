@@ -38,7 +38,7 @@ export const CommandInput = React.forwardRef<
     <CommandPrimitive.Input
       ref={ref}
       className={cn(
-        "field-control flex h-8 w-full bg-transparent text-sm text-ink outline-none placeholder:text-ink-soft/60 disabled:opacity-50",
+        "field-control flex h-8 w-full bg-transparent text-base sm:text-sm text-ink outline-none placeholder:text-ink-soft/60 disabled:opacity-50",
         className
       )}
       {...props}
