@@ -53,6 +53,15 @@ body {
   outline-offset: 3px;
 }
 
+/* Form controls that already show focus via their own border-color change
+   (see ContactForm's inputClass) — the sitewide ring above would otherwise
+   stack on top of it as a distracting double border. Written outside any
+   Tailwind @layer, same as the rule above, so it wins on the same footing
+   rather than losing to it via cascade-layer ordering. */
+.field-control:focus-visible {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -88,4 +97,19 @@ html {
 
 .reveal-in {
   animation: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-anim {
+  animation: step-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }

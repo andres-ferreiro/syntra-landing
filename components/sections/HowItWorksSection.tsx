@@ -1,7 +1,20 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import type { HomeDictionary } from "@/content/types";
+
+// One hand-illustrated icon per step (public/images/custom-icons/1-6.png),
+// with the step number overlapping its bottom-left corner — an icon-led,
+// editorial row instead of a connecting-line timeline.
+const ICONS = [
+  "/images/custom-icons/1.png",
+  "/images/custom-icons/2.png",
+  "/images/custom-icons/3.png",
+  "/images/custom-icons/4.png",
+  "/images/custom-icons/5.png",
+  "/images/custom-icons/6.png",
+];
 
 export function HowItWorksSection({
   howItWorks,
@@ -9,22 +22,22 @@ export function HowItWorksSection({
   howItWorks: HomeDictionary["howItWorks"];
 }) {
   return (
-    <section id="how-it-works" className="scroll-mt-24 border-t border-border bg-surface py-20 sm:py-28">
+    <section id="how-it-works" className="scroll-mt-24 py-20 sm:py-28">
       <Container>
         <Reveal>
           <SectionHeader headline={howItWorks.headline} />
         </Reveal>
-        <ol className="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          {howItWorks.steps.map((step, index) => (
-            <Reveal key={step.title} delay={index * 60}>
-              <li className="border-t border-border pt-5">
-                <span className="font-mono text-xs text-accent-strong">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-2 text-lg font-medium text-ink">{step.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
-                  {step.description}
-                </p>
+
+        <ol className="mt-20 grid grid-cols-2 gap-x-10 gap-y-20 sm:grid-cols-3 lg:grid-cols-6">
+          {howItWorks.steps.map((step, i) => (
+            <Reveal key={step.title} delay={i * 60}>
+              <li>
+                <div className="relative h-36 w-36">
+                  <Image src={ICONS[i]} alt="" fill className="object-contain" />
+                  <span className="absolute -bottom-4 -left-1 text-5xl font-bold text-ink">{i + 1}</span>
+                </div>
+                <h3 className="mt-7 text-xl font-semibold text-ink">{step.title}</h3>
+                <p className="mt-2.5 text-base leading-relaxed text-ink-soft">{step.description}</p>
               </li>
             </Reveal>
           ))}

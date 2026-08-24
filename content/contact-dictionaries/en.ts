@@ -11,6 +11,19 @@ export const en: ContactDictionary = {
     intro:
       "Tell us a bit about how your business runs today. We'll review it and follow up with what mandhy could look like for you, no pricing, no obligation.",
   },
+  workflowPreview: {
+    chat: {
+      user: "Do you have any openings this week?",
+      ai: "Sure! I booked your appointment for Thursday at 10am.",
+    },
+    actionsSummary: "Used 4 actions",
+    actions: [
+      { label: "Booked an appointment for Thursday at 10am", category: "Calendar" },
+      { label: "Updated the lead to Qualified in the CRM", category: "CRM" },
+      { label: "Sent a WhatsApp confirmation", category: "WhatsApp" },
+      { label: "Notified a team member", category: "Team" },
+    ],
+  },
   form: {
     sections: {
       contact: "Your details",
@@ -93,6 +106,8 @@ export const en: ContactDictionary = {
       notes: { label: "Additional notes", placeholder: "Anything else we should know?" },
     },
     requiredNote: "Fields marked * are required.",
+    back: "Back",
+    next: "Continue",
     submit: "Request my audit",
     submitting: "Sending…",
     successTitle: "Request received.",
@@ -102,7 +117,7 @@ export const en: ContactDictionary = {
   },
   booking: {
     prompt: "Prefer to just grab a time on my calendar?",
-    linkLabel: "Book a call →",
+    linkLabel: "Book a call",
     postSubmitHeadline: "Want to lock in a time now?",
     postSubmitIntro: "Pick a time that works for you, we've already got your details, no need to re-enter them.",
     unavailable: "Scheduling isn't available right now, we'll reach out by email or phone instead.",

@@ -11,6 +11,19 @@ export const es: ContactDictionary = {
     intro:
       "Cuéntanos un poco sobre cómo funciona tu negocio hoy. Lo revisaremos y te contactaremos con cómo podría verse mandhy para ti, sin costos, sin compromiso.",
   },
+  workflowPreview: {
+    chat: {
+      user: "¿Tienen citas esta semana?",
+      ai: "¡Claro! Agendé tu cita para el jueves a las 10am.",
+    },
+    actionsSummary: "Usó 4 acciones",
+    actions: [
+      { label: "Agendó una cita para el jueves a las 10am", category: "Calendario" },
+      { label: "Actualizó el lead a Calificado en el CRM", category: "CRM" },
+      { label: "Envió confirmación por WhatsApp", category: "WhatsApp" },
+      { label: "Notificó a un miembro del equipo", category: "Equipo" },
+    ],
+  },
   form: {
     sections: {
       contact: "Tus datos",
@@ -93,6 +106,8 @@ export const es: ContactDictionary = {
       notes: { label: "Notas adicionales", placeholder: "¿Algo más que debamos saber?" },
     },
     requiredNote: "Los campos marcados con * son obligatorios.",
+    back: "Atrás",
+    next: "Continuar",
     submit: "Solicitar mi auditoría",
     submitting: "Enviando…",
     successTitle: "Solicitud recibida.",
@@ -102,7 +117,7 @@ export const es: ContactDictionary = {
   },
   booking: {
     prompt: "¿Prefieres solo agendar una hora en mi calendario?",
-    linkLabel: "Agendar una llamada →",
+    linkLabel: "Agendar una llamada",
     postSubmitHeadline: "¿Quieres agendar una hora ahora?",
     postSubmitIntro: "Elige una hora que te funcione, ya tenemos tus datos, no hace falta escribirlos de nuevo.",
     unavailable: "La agenda no está disponible en este momento, te contactaremos por correo o teléfono.",

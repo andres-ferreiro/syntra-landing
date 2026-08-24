@@ -130,7 +130,6 @@ export const en: HomeDictionary = {
       { label: "How it works", href: "#how-it-works" },
       { label: "FAQ", href: "#faq" },
     ],
-    contactCta: { label: "Talk to mandhy", href: "/contact" },
     rights: "All rights reserved.",
   },
 };

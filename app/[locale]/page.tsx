@@ -6,7 +6,6 @@ import { AdvantagesSection } from "@/components/sections/AdvantagesSection";
 import { CoreServicesSection } from "@/components/sections/CoreServicesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { FaqSection } from "@/components/sections/FaqSection";
-import { FinalCtaSection } from "@/components/sections/FinalCtaSection";
 import { buildFaqSchema, safeJsonLd } from "@/lib/structured-data";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
@@ -26,7 +25,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <CoreServicesSection coreServices={dict.coreServices} locale={locale} />
       <HowItWorksSection howItWorks={dict.howItWorks} />
       <FaqSection faq={dict.faq} />
-      <FinalCtaSection finalCta={dict.finalCta} locale={locale} />
     </>
   );
 }

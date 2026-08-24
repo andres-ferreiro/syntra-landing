@@ -130,7 +130,6 @@ export const es: HomeDictionary = {
       { label: "Cómo funciona", href: "#how-it-works" },
       { label: "Preguntas frecuentes", href: "#faq" },
     ],
-    contactCta: { label: "Hablar con mandhy", href: "/contact" },
     rights: "Todos los derechos reservados.",
   },
 };

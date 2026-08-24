@@ -61,7 +61,6 @@ export interface HomeDictionary {
   footer: {
     tagline: string;
     links: NavLink[];
-    contactCta: Cta;
     rights: string;
   };
 }

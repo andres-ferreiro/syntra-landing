@@ -21,6 +21,11 @@ export interface ContactDictionary {
     headline: string;
     intro: string;
   };
+  workflowPreview: {
+    chat: { user: string; ai: string };
+    actionsSummary: string;
+    actions: { label: string; category: string }[];
+  };
   form: {
     sections: {
       contact: string;
@@ -44,6 +49,8 @@ export interface ContactDictionary {
       notes: FieldCopy;
     };
     requiredNote: string;
+    back: string;
+    next: string;
     submit: string;
     submitting: string;
     successTitle: string;
