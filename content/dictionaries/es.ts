@@ -9,7 +9,9 @@ export const es: HomeDictionary = {
   nav: {
     links: [
       { label: "Soluciones", href: "#services" },
+      { label: "Industrias", href: "#industries" },
       { label: "Cómo funciona", href: "#how-it-works" },
+      { label: "Precios", href: "/pricing" },
       { label: "Preguntas frecuentes", href: "#faq" },
     ],
     cta: { label: "Solicitar auditoría", href: "/contact" },
@@ -57,6 +59,10 @@ export const es: HomeDictionary = {
       description: "Cada contacto y oportunidad organizados en un pipeline claro.",
     },
   },
+  industries: {
+    headline: "Diseñado para los negocios que mantienen tu ciudad funcionando.",
+    subhead: "mandhy se adapta a cómo tu industria realmente agenda, vende y da seguimiento.",
+  },
   ai: {
     conversation: [
       { from: "user", text: "Hola, ¿tienen disponibilidad esta semana?" },
@@ -78,6 +84,10 @@ export const es: HomeDictionary = {
       { title: "Lanzar", description: "mandhy se pone a trabajar junto a tu equipo." },
       { title: "Optimizar", description: "Ajustamos a mandhy con base en resultados reales." },
     ],
+    teaserCta: {
+      headline: "¿Quieres saber cuánto te cuesta un seguimiento lento?",
+      cta: { label: "Calcula tu fuga de ingresos", href: "/calculator" },
+    },
   },
   faq: {
     headline: "Preguntas frecuentes",

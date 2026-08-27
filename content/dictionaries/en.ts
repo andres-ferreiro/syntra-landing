@@ -9,7 +9,9 @@ export const en: HomeDictionary = {
   nav: {
     links: [
       { label: "Solutions", href: "#services" },
+      { label: "Industries", href: "#industries" },
       { label: "How it works", href: "#how-it-works" },
+      { label: "Pricing", href: "/pricing" },
       { label: "FAQ", href: "#faq" },
     ],
     cta: { label: "Request an audit", href: "/contact" },
@@ -57,6 +59,10 @@ export const en: HomeDictionary = {
       description: "Every contact and opportunity organized in one clear pipeline.",
     },
   },
+  industries: {
+    headline: "Built for the businesses that keep your town running.",
+    subhead: "mandhy adapts to how your industry actually books, sells, and follows up.",
+  },
   ai: {
     conversation: [
       { from: "user", text: "Hi, do you have availability this week?" },
@@ -78,6 +84,10 @@ export const en: HomeDictionary = {
       { title: "Launch", description: "mandhy goes to work alongside your team." },
       { title: "Optimize", description: "We refine mandhy based on real results." },
     ],
+    teaserCta: {
+      headline: "Curious what slow follow-up is actually costing you?",
+      cta: { label: "Calculate your revenue leak", href: "/calculator" },
+    },
   },
   faq: {
     headline: "Frequently Asked Questions",

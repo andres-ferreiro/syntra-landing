@@ -18,9 +18,11 @@ const comfortaa = Comfortaa({ weight: "400", subsets: ["latin"] });
 // The final CTA and the footer are one continuous gradient block (no
 // section border between them) — the CTA sits at the top rather than
 // floating mid-page, and the giant "mandhy" wordmark anchors the bottom.
-// The CTA itself is skipped on /contact and /schedule, since those pages
-// already *are* the conversion action — repeating "request an audit" right
-// below the form/booking widget is redundant, not persuasive.
+// The CTA itself is skipped on /contact, /schedule, /pricing, /calculator,
+// and /industries/[slug], since those pages already end with their own
+// conversion action (a form, a booking widget, or a tailored CTA) —
+// repeating a generic "request an audit" right below is redundant, not
+// persuasive.
 export function Footer({
   locale,
   finalCta,
@@ -31,7 +33,12 @@ export function Footer({
   footer: HomeDictionary["footer"];
 }) {
   const pathname = usePathname();
-  const hideCta = pathname.endsWith("/contact") || pathname.endsWith("/schedule");
+  const hideCta =
+    pathname.endsWith("/contact") ||
+    pathname.endsWith("/schedule") ||
+    pathname.endsWith("/pricing") ||
+    pathname.endsWith("/calculator") ||
+    pathname.includes("/industries/");
 
   return (
     <footer className="relative overflow-hidden">

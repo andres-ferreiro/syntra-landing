@@ -43,12 +43,17 @@ export interface HomeDictionary {
     integrations: { title: string; description: string };
     crm: { title: string; description: string };
   };
+  industries: {
+    headline: string;
+    subhead?: string;
+  };
   ai: {
     conversation: ChatMessage[];
   };
   howItWorks: {
     headline: string;
     steps: { title: string; description: string }[];
+    teaserCta?: { headline: string; cta: Cta };
   };
   faq: {
     headline: string;

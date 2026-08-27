@@ -27,6 +27,22 @@ export function buildOrganizationSchema() {
   };
 }
 
+export function buildServiceSchema({ name, description, url }: { name: string; description: string; url: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: name,
+    name,
+    description,
+    url,
+    provider: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  };
+}
+
 export function buildFaqSchema(items: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",

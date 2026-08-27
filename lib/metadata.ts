@@ -6,7 +6,12 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 export function buildPageMetadata(
   locale: Locale,
-  { title, description, path }: { title: string; description: string; path: string }
+  {
+    title,
+    description,
+    path,
+    localizedPaths,
+  }: { title: string; description: string; path: string; localizedPaths?: Partial<Record<Locale, string>> }
 ): Metadata {
   const canonicalPath = `/${locale}${path}`;
 
@@ -16,7 +21,7 @@ export function buildPageMetadata(
     description,
     alternates: {
       canonical: canonicalPath,
-      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}${path}`])),
+      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}${localizedPaths?.[l] ?? path}`])),
     },
     openGraph: {
       title,

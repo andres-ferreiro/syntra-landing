@@ -31,7 +31,7 @@ The primary conversion action is a contact/inquiry form (or equivalent lead-capt
 - Core service components to represent: AI-powered chatbots, CRM integration, scheduling, custom automations, Google reputation/review management.
 - Everything described as "tailored for conversion" — the page should carry that conversion-first framing rather than treating these as generic feature bullets.
 - Hard constraint: whitelabel. Never mention GoHighLevel, GHL, or any underlying platform/vendor name in copy, metadata, code comments, filenames, or assets. mandhy is always presented as the sole brand behind the stack.
-- No pricing, packages, or case studies confirmed yet — do not fabricate these.
+- No dollar pricing confirmed yet — do not fabricate rates. `/pricing` (added 2026) shows three scope tiers (Base/Crecimiento/Integral) built from the confirmed capability list above (chatbot → +CRM/scheduling → +automations → +reputation), as feature checklists with no price shown — a deliberate, owner-approved decision to give visitors a sense of scope without publishing rates or fabricating packages. No case studies confirmed yet — do not fabricate these.
 
 ## Brand Commitments
 

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
+import { CtaButton } from "@/components/ui/CtaButton";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import type { HomeDictionary } from "@/content/types";
 
 // One hand-illustrated icon per step (public/images/custom-icons/1-6.png),
@@ -18,8 +20,10 @@ const ICONS = [
 
 export function HowItWorksSection({
   howItWorks,
+  locale,
 }: {
   howItWorks: HomeDictionary["howItWorks"];
+  locale: Locale;
 }) {
   return (
     <section id="how-it-works" className="scroll-mt-24 py-20 sm:py-28">
@@ -42,6 +46,17 @@ export function HowItWorksSection({
             </Reveal>
           ))}
         </ol>
+
+        {howItWorks.teaserCta ? (
+          <Reveal className="mt-16 flex flex-col items-center gap-4 border-t border-border pt-10 text-center sm:flex-row sm:justify-between sm:text-left">
+            <p className="text-lg font-medium tracking-tight text-ink">{howItWorks.teaserCta.headline}</p>
+            <CtaButton
+              label={howItWorks.teaserCta.cta.label}
+              href={localizeHref(locale, howItWorks.teaserCta.cta.href)}
+              variant="secondary"
+            />
+          </Reveal>
+        ) : null}
       </Container>
     </section>
   );

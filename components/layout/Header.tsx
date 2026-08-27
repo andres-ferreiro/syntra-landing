@@ -29,7 +29,7 @@ export function Header({
           {nav.links.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={localizeHref(locale, link.href)}
               className="rounded-pill px-3.5 py-1.5 text-sm font-medium text-ink-soft backdrop-blur-md transition-colors duration-200 hover:bg-paper/45 hover:text-ink"
             >
               {link.label}
@@ -63,7 +63,7 @@ export function Header({
             {nav.links.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={localizeHref(locale, link.href)}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-2 py-2.5 text-base font-medium text-ink hover:bg-surface"
               >
